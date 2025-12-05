@@ -2,7 +2,9 @@
 
 Learn how to deploy and performance test the state-of-the-art YOLO11 object detection model to Amazon SageMaker AI using PyTorch for production-ready, real-time inference with GPU acceleration.
 
-![Sample Output](sample_image_00005_detected.jpg)
+![Sample Output](./previews/sample_images_01_detected.jpg)
+
+![Sample Output](./previews/sample_images_04_detected.jpg)
 
 ## Contents
 
