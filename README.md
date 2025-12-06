@@ -40,7 +40,7 @@ Learn how to deploy and performance test the state-of-the-art YOLO11 object dete
          │
          ▼
 ┌─────────────────┐
-│  YOLO11l Model  │ Run inference on GPU
+│    predict_fn   │ Run inference on GPU
 │    (PyTorch)    │ with confidence threshold
 └────────┬────────┘
          │
