@@ -18,7 +18,7 @@ endpoint_name = "<YOUR_SAGEMAKER_ENDPOINT_NAME>"  # replace with your endpoint n
 
 
 class BotoClient:
-    def __init__(self, host):
+    def __init__(self):
         self.sagemaker_client = boto3.client("sagemaker-runtime", region_name=region)
 
     def resize_long_side(self, image: Image.Image, max_size: int = 640) -> Image.Image:
@@ -92,8 +92,8 @@ class BotoClient:
         end_perf_counter = time.perf_counter()
         request_meta["response_time"] = (end_perf_counter - start_perf_counter) * 1000
 
-        logger.info(start_perf_counter)
-        logger.info(end_perf_counter)
+        logger.debug(start_perf_counter)
+        logger.debug(end_perf_counter)
         logger.info(request_meta["response_time"])
 
         events.request.fire(**request_meta)
