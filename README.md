@@ -64,14 +64,22 @@ Learn how to deploy and performance test the state-of-the-art YOLO11 object dete
 
 ## Usage
 
-Run the Jupyter notebook `deploy_yolo.ipynb` to:
+1. Login to your AWS account on the commandline: `aws login`
+2. Create a Python virtual environment (see below)
+3. Run the Jupyter notebook [deploy_yolo.ipynb](deploy_yolo.ipynb)
+   - Downloads YOLO11l model weights
+   - Packages model artifact with inference code
+   - Deploys to SageMaker real-time endpoint
+   - Tests object detection on sample images
+4. Optionally, use `locust_scripts/` to load test your endpoint (see [README.md](locust_scripts/README.md))
 
-1. Download YOLO11l model weights
-2. Package model artifact with inference code
-3. Deploy to SageMaker real-time endpoint
-4. Test object detection on sample images
+## Install Requirements (Mac with `pip`)
 
-Optionally, use `locust_scripts/` for performance and load testing of the deployed endpoint.
+```bash
+python -m pip install virtualenv --break-system-packages -Uq
+python -m venv .venv
+source .venv/bin/activate
+```
 
 ## License
 
