@@ -8,12 +8,12 @@ Learn how to deploy and performance test the state-of-the-art YOLO11 object dete
 
 ## Features
 
-- Downloads pre-trained YOLO11l model weights
+- Downloads pre-trained [YOLO11l](https://docs.ultralytics.com/models/yolo11/) model weights
 - Creates SageMaker-compatible model artifact
 - Deploys real-time endpoint with GPU acceleration (ml.g4dn.xlarge)
 - Custom PyTorch inference handler (framework version 2.6.0)
 - Supports JPEG and PNG image formats
-- Includes performance testing with Locust
+- Includes performance testing with [Locust](https://locust.io/)
 
 ## Contents
 
@@ -71,7 +71,7 @@ Learn how to deploy and performance test the state-of-the-art YOLO11 object dete
    - Packages model artifact with inference code
    - Deploys to SageMaker real-time endpoint
    - Tests object detection on sample images
-4. Optionally, use `locust_scripts/` to load test your endpoint (see [README.md](locust_scripts/README.md))
+4. Optionally, use [Locust](https://locust.io/) to load test your endpoint (see [README.md](locust_scripts/README.md))
 
 ## Install Requirements (Mac with `pip`)
 
